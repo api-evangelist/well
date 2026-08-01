@@ -1,7 +1,30 @@
 aid: well
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/well.png
 name: Well
-description: Well is a company surfaced as a portfolio company of general-catalyst and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Well is a personalized health engagement platform for employers and their
+  workforce, marketed as "your personalized daily health partner." It pairs an
+  AI-driven health engine that delivers tailored interventions and behavior-change
+  nudges with human "Well Guides," across a mobile and web experience, and ties
+  outcomes to a performance-based ROI guarantee for the sponsoring employer. Well
+  powers wellness programs, health challenges, biometric screenings, premium
+  reductions, and rewards for large employer and benefits clients including Bank
+  of America, USAA, Sam's Club, UNC Health, MGM, Regions, Amentum, and Octapharma.
+  The company is backed by General Catalyst and was added to the API Evangelist
+  network as a venture-portfolio lead; enrichment found a public WordPress
+  marketing/campaign presence at well.co but no public developer API, SDKs,
+  documentation, or developer portal.
 url: https://raw.githubusercontent.com/api-evangelist/well/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +34,36 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Health
+- Digital Health
+- Health Engagement
+- Wellness
+- Wellbeing
+- Employee Benefits
 apis: []
+common:
+- type: DomainSecurity
+  url: security/well-domain-security.yml
+- type: Website
+  url: https://www.well.co
+- type: Blog
+  url: https://www.well.co/hub
+- type: Support
+  url: https://www.well.co/help
+- type: PrivacyPolicy
+  url: https://www.well.co/privacy
+- type: TermsOfService
+  url: https://www.well.co/terms
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1

@@ -1,0 +1,22 @@
+generated: '2026-07-21'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.well.co
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Sep 29 17:45:47 2026 GMT
+  hsts: false
+domains:
+- domain: well.co
+  dnssec: false
+  caa:
+  - 0 issue "amazonaws.com"
+  - 0 issue "amazontrust.com"
+  - 0 issue "awstrust.com"
+  - 0 issue "letsencrypt.org"
+  - 0 issue "rapidssl.com"
+  - 0 issue "sectigo.com"
+  spf: true
+  dmarc: true
+  dmarc_policy: reject
